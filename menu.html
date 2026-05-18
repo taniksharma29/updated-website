@@ -37,8 +37,8 @@
                     <img src="assets/images/logo.png" alt="Royal Haveli Logo" style="height: 60px;">
                 </a>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="nav-actions">
@@ -63,119 +63,749 @@
         <div class="container animate-on-scroll">
 
             <div class="menu-filters">
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Appetizers</button>
-                <button class="filter-btn">Mains</button>
-                <button class="filter-btn">Desserts</button>
-                <button class="filter-btn">Drinks</button>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+                <button class="filter-btn" data-filter="veg-entrees">Veg Entrees</button>
+                <button class="filter-btn" data-filter="nonveg-entrees">Non-Veg Entrees</button>
+                <button class="filter-btn" data-filter="breads">Breads</button>
+                <button class="filter-btn" data-filter="bowls">Bowls</button>
+                <button class="filter-btn" data-filter="kids">Kids</button>
+                <button class="filter-btn" data-filter="salads">Salads</button>
+                <button class="filter-btn" data-filter="soups">Soups</button>
+                <button class="filter-btn" data-filter="tacos">Tacos</button>
+                <button class="filter-btn" data-filter="extras">Extras</button>
+                <button class="filter-btn" data-filter="burgers">Burgers</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
             </div>
 
             <div class="menu-list text-left">
-                <!-- Appetizers -->
-                <h3
-                    style="color: var(--accent-gold); margin: 40px 0 20px; font-family: var(--font-heading); text-align: center;">
-                    Appetizers</h3>
-
-                <div class="menu-item">
-                    <img src="assets/images/butter-chicken.jpg" alt="Gourmet Salad" class="menu-item-img">
-                    <div class="menu-item-info">
-                        <div class="menu-item-header">
-                            <h4 class="menu-item-title">Artisan Truffle Salad</h4>
-                            <div class="leader-line"></div>
-                            <span class="menu-item-price">$18.00</span>
+                <div class="menu-section" data-category="appetizers">
+                    <h3 class="menu-section-title">Appetizers</h3>
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Vegetable Samosa" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Vegetable Samosa</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$5.99</span>
+                            </div>
+                            <p class="menu-item-desc">Crispy pastry stuffed with spiced potatoes, peas, and aromatic Indian spices.</p>
                         </div>
-                        <p class="menu-item-desc">Fresh organic greens, shaved truffles, candied walnuts, and a light
-                            citrus vinaigrette.</p>
+                    </div>
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="assets/images/hero.jpg" alt="Aloo Tikki" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Aloo Tikki</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$5.99</span>
+                            </div>
+                            <p class="menu-item-desc">Crispy potato patties served with tangy tamarind and mint chutneys.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Paneer Pakora" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Paneer Pakora</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$10.99</span>
+                            </div>
+                            <p class="menu-item-desc">Batter-fried cottage cheese cubes served with spicy chutney.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="assets/images/butter-chicken.jpg" alt="Mixed Veg Pakora" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Mixed Veg Pakora</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$7.99</span>
+                            </div>
+                            <p class="menu-item-desc">A crisp medley of mixed vegetables in a spiced gram flour batter.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="appetizers">
+                        <img src="assets/images/chicken-biryani.jpg" alt="Veg Appetizer Platter" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Veg Appetizer Platter</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$17.99</span>
+                            </div>
+                            <p class="menu-item-desc">A royal selection of samosas, pakoras, and kebabs served with chutneys.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-item">
-                    <img src="assets/images/chicken-biryani.jpg" alt="Bruschetta" class="menu-item-img">
-                    <div class="menu-item-info">
-                        <div class="menu-item-header">
-                            <h4 class="menu-item-title">Tomato Basil Bruschetta</h4>
-                            <div class="leader-line"></div>
-                            <span class="menu-item-price">$14.00</span>
+                <div class="menu-section" data-category="veg-entrees">
+                    <h3 class="menu-section-title">Veg Entrees</h3>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Chana Masala" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chana Masala</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$14.99</span>
+                            </div>
+                            <p class="menu-item-desc">North Indian-style chickpea curry made with onions, tomatoes, and spices.</p>
                         </div>
-                        <p class="menu-item-desc">Toasted rustic bread topped with vine-ripened tomatoes, fresh basil,
-                            and balsamic glaze.</p>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/hero.jpg" alt="Shahi Paneer" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Shahi Paneer</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$16.99</span>
+                            </div>
+                            <p class="menu-item-desc">Paneer cooked in a rich creamy gravy made from onions, cream, and cashews.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/butter-chicken.jpg" alt="Bhindi Special" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Bhindi Special</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Okra cooked with ground spices, herbs, onions, and tomatoes.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Mix Veg Sabji" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Mix Veg Sabji</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Mixed vegetables cooked with potatoes, bell peppers, cauliflower, and peas.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/royal-chicken-biryani.jpg" alt="Special Saag" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Special Saag</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Spinach mustard leaves cooked with cabbage, ginger, garlic, and onion.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Kadhai Paneer" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Kadhai Paneer</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$16.99</span>
+                            </div>
+                            <p class="menu-item-desc">Spicy paneer cooked with bell peppers and tomato-based gravy.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/butter-chicken.jpg" alt="Baingan Bhartha" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Baingan Bhartha</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Fire-roasted eggplant mashed and cooked with a flavorful spice blend.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/hero.jpg" alt="Dal Makhani" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Dal Makhani</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Slow-cooked black lentils simmered in a rich buttery tomato sauce.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Tadka Dal" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Tadka Dal</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$14.99</span>
+                            </div>
+                            <p class="menu-item-desc">Lentils tempered with cumin, garlic, and red chili for a warming flavor.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Malai Kofta" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Malai Kofta</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$16.99</span>
+                            </div>
+                            <p class="menu-item-desc">Golden potato dumplings simmered in a creamy, mildly spiced gravy.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="veg-entrees">
+                        <img src="assets/images/butter-chicken.jpg" alt="Palak Paneer" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Palak Paneer</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$16.99</span>
+                            </div>
+                            <p class="menu-item-desc">Cottage cheese cubes cooked in a spinach-rich mustard sauce.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Mains -->
-                <h3
-                    style="color: var(--accent-gold); margin: 60px 0 20px; font-family: var(--font-heading); text-align: center;">
-                    Main Courses</h3>
-
-                <div class="menu-item">
-                    <img src="assets/images/paneer-tikka.jpg" alt="Pizza" class="menu-item-img">
-                    <div class="menu-item-info">
-                        <div class="menu-item-header">
-                            <h4 class="menu-item-title">Wood-Fired Margherita</h4>
-                            <div class="leader-line"></div>
-                            <span class="menu-item-price">$22.00</span>
+                <div class="menu-section" data-category="nonveg-entrees">
+                    <h3 class="menu-section-title">Non-Veg Entrees</h3>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/butter-chicken.jpg" alt="Chicken Curry" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chicken Curry</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$17.99</span>
+                            </div>
+                            <p class="menu-item-desc">Tender chicken simmered in a flavorful onion and tomato gravy.</p>
                         </div>
-                        <p class="menu-item-desc">San Marzano tomatoes, fresh buffalo mozzarella, basil, and a drizzle
-                            of extra virgin olive oil.</p>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/slow-cooked-lamb.jpg" alt="Goat Curry" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Goat Curry</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$18.99</span>
+                            </div>
+                            <p class="menu-item-desc">Slow-cooked goat in a spiced onion, tomato, ginger, and garlic gravy.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/chicken-biryani.jpg" alt="Shahi Chicken Korma" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Shahi Chicken Korma</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$17.99</span>
+                            </div>
+                            <p class="menu-item-desc">A royal Mughlai chicken dish simmered with cashews, cream, and warm spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/royal-chicken-biryani.jpg" alt="Saag Gosht" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Saag Gosht</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$18.99</span>
+                            </div>
+                            <p class="menu-item-desc">Lamb and spinach cooked together in a creamy, spiced sauce.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Rogan Josh" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Rogan Josh</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$18.99</span>
+                            </div>
+                            <p class="menu-item-desc">Aromatic lamb curry flavored with Kashmiri chilies and rich spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/slow-cooked-lamb.jpg" alt="Kadhai Lamb" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Kadhai Lamb</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$18.99</span>
+                            </div>
+                            <p class="menu-item-desc">Lamb cooked with bell peppers and bold spices in a kadhai-style gravy.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/hero.jpg" alt="Fish Curry" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Fish Curry</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$17.99</span>
+                            </div>
+                            <p class="menu-item-desc">Fish pieces simmered in a fragrant tomato and coconut spice curry.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/butter-chicken.jpg" alt="Prawn Curry" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Prawn Curry</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$17.99</span>
+                            </div>
+                            <p class="menu-item-desc">Fresh prawns cooked in a spicy, tangy curry base with warm Indian spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="nonveg-entrees">
+                        <img src="assets/images/butter-chicken.jpg" alt="Butter Chicken" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Butter Chicken</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$17.99</span>
+                            </div>
+                            <p class="menu-item-desc">Classic chicken makhani simmered in a buttery tomato sauce with aromatic spices.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-item">
-                    <img src="assets/images/butter-chicken.jpg" alt="Pasta" class="menu-item-img">
-                    <div class="menu-item-info">
-                        <div class="menu-item-header">
-                            <h4 class="menu-item-title">Lobster Linguine</h4>
-                            <div class="leader-line"></div>
-                            <span class="menu-item-price">$35.00</span>
-                            <span class="badge">Popular</span>
+                <div class="menu-section" data-category="breads">
+                    <h3 class="menu-section-title">Breads</h3>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/hero.jpg" alt="Lachha Parantha" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Lachha Parantha</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Crispy layered flatbread made from whole wheat and pan-fried with ghee.</p>
                         </div>
-                        <p class="menu-item-desc">Freshly caught lobster tossed in a creamy white wine and garlic herb
-                            sauce.</p>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/butter-chicken.jpg" alt="Tandoori Roti" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Tandoori Roti</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Freshly baked whole wheat bread traditional to the clay oven.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/chicken-biryani.jpg" alt="Makki Ki Roti" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Makki Ki Roti</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$2.99</span>
+                            </div>
+                            <p class="menu-item-desc">Corn flour flatbread lightly cooked on a skillet.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Butter Naan" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Butter Naan</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Soft baked flatbread brushed with layered ghee.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/butter-chicken.jpg" alt="Paneer Naan" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Paneer Naan</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$4.99</span>
+                            </div>
+                            <p class="menu-item-desc">Stuffed naan with spiced cottage cheese and herbs.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Garlic Naan" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Garlic Naan</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$4.99</span>
+                            </div>
+                            <p class="menu-item-desc">Soft flatbread topped with garlic butter and fresh coriander.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/hero.jpg" alt="Bullet Naan" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Bullet Naan</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$4.99</span>
+                            </div>
+                            <p class="menu-item-desc">Spicy naan stuffed with jalapeños, cilantro, and cheese.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Keema Naan" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Keema Naan</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$5.99</span>
+                            </div>
+                            <p class="menu-item-desc">Naan stuffed with spiced minced lamb and herbs.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="breads">
+                        <img src="assets/images/butter-chicken.jpg" alt="Kashmiri Naan" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Kashmiri Naan</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$4.99</span>
+                            </div>
+                            <p class="menu-item-desc">Sweet naan loaded with nuts and raisins for a royal finish.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-item">
-                    <img src="assets/images/chicken-biryani.jpg" alt="Steak" class="menu-item-img">
-                    <div class="menu-item-info">
-                        <div class="menu-item-header">
-                            <h4 class="menu-item-title">Wagyu Ribeye</h4>
-                            <div class="leader-line"></div>
-                            <span class="menu-item-price">$85.00</span>
-                            <span class="badge">Chef's Choice</span>
+                <div class="menu-section" data-category="bowls">
+                    <h3 class="menu-section-title">Bowls</h3>
+                    <div class="menu-item" data-category="bowls">
+                        <img src="assets/images/royal-chicken-biryani.jpg" alt="Paneer Achari Tikka With Rice & Salad" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Paneer Achari Tikka With Rice & Salad</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Marinated paneer served with aromatic rice and crisp salad.</p>
                         </div>
-                        <p class="menu-item-desc">A4 grade Wagyu beef served with roasted asparagus and a rich
-                            peppercorn reduction.</p>
+                    </div>
+                    <div class="menu-item" data-category="bowls">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Paneer Malai Tikka With Rice & Salad" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Paneer Malai Tikka With Rice & Salad</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Creamy paneer tikka paired with fragrant rice and fresh salad.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="bowls">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Tandoori Chicken With Rice & Salad" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Tandoori Chicken With Rice & Salad</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Smoky tandoori chicken served with basmati rice and salad.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="bowls">
+                        <img src="assets/images/butter-chicken.jpg" alt="Chicken Achari Tikka With Rice & Salad" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chicken Achari Tikka With Rice & Salad</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Tangy achari chicken bowl served with rice and crisp salad.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="bowls">
+                        <img src="assets/images/slow-cooked-lamb.jpg" alt="Chicken Seekh Kabab With Rice & Salad" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chicken Seekh Kabab With Rice & Salad</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Spiced chicken kabab served with fragrant rice and garden salad.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Desserts -->
-                <h3
-                    style="color: var(--accent-gold); margin: 60px 0 20px; font-family: var(--font-heading); text-align: center;">
-                    Desserts</h3>
-
-                <div class="menu-item">
-                    <img src="assets/images/paneer-tikka.jpg" alt="Dessert" class="menu-item-img">
-                    <div class="menu-item-info">
-                        <div class="menu-item-header">
-                            <h4 class="menu-item-title">Decadent Chocolate Lava</h4>
-                            <div class="leader-line"></div>
-                            <span class="menu-item-price">$14.00</span>
+                <div class="menu-section" data-category="kids">
+                    <h3 class="menu-section-title">Kids Menu</h3>
+                    <div class="menu-item" data-category="kids">
+                        <img src="assets/images/butter-chicken.jpg" alt="Shahi Paneer with Naan/Rice" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Shahi Paneer with Naan/Rice</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$11.99</span>
+                            </div>
+                            <p class="menu-item-desc">Royal paneer served with choice of naan or steamed rice.</p>
                         </div>
-                        <p class="menu-item-desc">Warm chocolate cake with a molten center, served with Madagascar
-                            vanilla bean ice cream.</p>
+                    </div>
+                    <div class="menu-item" data-category="kids">
+                        <img src="assets/images/chicken-biryani.jpg" alt="Butter Chicken with Naan/Rice" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Butter Chicken with Naan/Rice</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$12.99</span>
+                            </div>
+                            <p class="menu-item-desc">Mild creamy butter chicken paired with naan or rice for kids.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-item">
-                    <img src="assets/images/butter-chicken.jpg" alt="Cheesecake" class="menu-item-img">
-                    <div class="menu-item-info">
-                        <div class="menu-item-header">
-                            <h4 class="menu-item-title">New York Cheesecake</h4>
-                            <div class="leader-line"></div>
-                            <span class="menu-item-price">$12.00</span>
+                <div class="menu-section" data-category="salads">
+                    <h3 class="menu-section-title">Salads</h3>
+                    <div class="menu-item" data-category="salads">
+                        <img src="assets/images/hero.jpg" alt="Mix Salad" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Mix Salad</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$6.99</span>
+                            </div>
+                            <p class="menu-item-desc">A fresh mix of cucumbers, carrots, onions, tomatoes, and lemon.</p>
                         </div>
-                        <p class="menu-item-desc">Classic creamy cheesecake with a graham cracker crust and fresh berry
-                            compote.</p>
+                    </div>
+                    <div class="menu-item" data-category="salads">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Chicken Salad" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chicken Salad</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$14.99</span>
+                            </div>
+                            <p class="menu-item-desc">Grilled chicken mixed with salad greens and fresh vegetables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-category="soups">
+                    <h3 class="menu-section-title">Soups</h3>
+                    <div class="menu-item" data-category="soups">
+                        <img src="assets/images/butter-chicken.jpg" alt="Dal Lentil Soup" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Dal Lentil Soup</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$6.99</span>
+                            </div>
+                            <p class="menu-item-desc">Comforting lentil soup infused with Indian spices and herbs.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="soups">
+                        <img src="assets/images/hero.jpg" alt="Coconut Tomato Rasam" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Coconut Tomato Rasam</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$6.99</span>
+                            </div>
+                            <p class="menu-item-desc">A tangy South Indian soup made with coconut, tomato, and spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="soups">
+                        <img src="assets/images/chicken-biryani.jpg" alt="Tomato Basil Soup" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Tomato Basil Soup</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$6.99</span>
+                            </div>
+                            <p class="menu-item-desc">Creamy tomato soup finished with fragrant basil leaves.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-category="tacos">
+                    <h3 class="menu-section-title">Tacos</h3>
+                    <div class="menu-item" data-category="tacos">
+                        <img src="assets/images/hero.jpg" alt="Paneer Tacos" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Paneer Tacos</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$10.99</span>
+                            </div>
+                            <p class="menu-item-desc">Seasoned paneer, fresh greens, and sauces wrapped in warm flatbread.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="tacos">
+                        <img src="assets/images/chicken-biryani.jpg" alt="Chicken Tacos" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chicken Tacos</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$11.99</span>
+                            </div>
+                            <p class="menu-item-desc">Juicy chicken pieces with crunchy vegetables and zesty sauces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-category="extras">
+                    <h3 class="menu-section-title">Extras</h3>
+                    <div class="menu-item" data-category="extras">
+                        <img src="assets/images/hero.jpg" alt="Plain Dahi" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Plain Dahi</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$4.99</span>
+                            </div>
+                            <p class="menu-item-desc">Plain yogurt served fresh as a cooling accompaniment.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="extras">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Mix Veg Raita" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Mix Veg Raita</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$5.99</span>
+                            </div>
+                            <p class="menu-item-desc">Yogurt with mixed vegetables, cucumber, tomato, and spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="extras">
+                        <img src="assets/images/butter-chicken.jpg" alt="Boondi Raita" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Boondi Raita</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$5.99</span>
+                            </div>
+                            <p class="menu-item-desc">Creamy yogurt topped with crunchy boondi and spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="extras">
+                        <img src="assets/images/chicken-biryani.jpg" alt="Pickle" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Pickle</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$2.99</span>
+                            </div>
+                            <p class="menu-item-desc">Aromatic Indian pickles made from vegetables and spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="extras">
+                        <img src="assets/images/royal-chicken-biryani.jpg" alt="Papadum" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Papadum</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$4.99</span>
+                            </div>
+                            <p class="menu-item-desc">Thin, crispy lentil wafers served as a light, crunchy side.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-category="burgers">
+                    <h3 class="menu-section-title">Burgers</h3>
+                    <div class="menu-item" data-category="burgers">
+                        <img src="assets/images/hero.jpg" alt="Aloo Tikki Burger" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Aloo Tikki Burger</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$13.99</span>
+                            </div>
+                            <p class="menu-item-desc">Crispy potato patty served with coleslaw and mint chutney.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Paneer Tikka Burger" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Paneer Tikka Burger</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$14.99</span>
+                            </div>
+                            <p class="menu-item-desc">Grilled paneer with spiced chutneys and crunchy greens in a bun.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <img src="assets/images/tandoori-grilled-chicken.jpg" alt="Chicken Tikka Burger" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chicken Tikka Burger</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$15.99</span>
+                            </div>
+                            <p class="menu-item-desc">Juicy chicken tikka pieces with crisp veggies and creamy sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-category="drinks">
+                    <h3 class="menu-section-title">Drinks</h3>
+                    <div class="menu-item" data-category="drinks">
+                        <img src="assets/images/hero.jpg" alt="Coffee" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Coffee</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Freshly brewed coffee to finish your royal meal.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <img src="assets/images/hero.jpg" alt="Chai" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Chai</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Aromatic spiced Indian tea made with milk and cardamom.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <img src="assets/images/butter-chicken.jpg" alt="Aam Panna" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Aam Panna</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Refreshing mango drink with roasted cumin and mint.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <img src="assets/images/paneer-tikka.jpg" alt="Jal Jeera" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Jal Jeera</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Cooling spiced water flavored with cumin and mint.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <img src="assets/images/royal-chicken-biryani.jpg" alt="Mango Lassi" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Mango Lassi</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$5.99</span>
+                            </div>
+                            <p class="menu-item-desc">Creamy yogurt drink blended with ripe mangoes.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <img src="assets/images/hero.jpg" alt="Salted Lassi" class="menu-item-img">
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Salted Lassi</h4>
+                                <div class="leader-line"></div>
+                                <span class="menu-item-price">$3.99</span>
+                            </div>
+                            <p class="menu-item-desc">Savory yogurt drink with roasted cumin and salt.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,7 +817,7 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <img src="assets/images/logo.jpg" alt="Royal Haveli Logo" style="height: 100px; margin: 0 auto;">
+                    <img src="assets/images/logo.png" alt="Royal Haveli Logo" style="height: 100px; margin: 0 auto;">
                 </div>
             </div>
 
